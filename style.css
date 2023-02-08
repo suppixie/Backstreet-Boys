@@ -67,9 +67,6 @@ header ul li a {
 }
 
 .albums {
-    background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
-    background-repeat: no-repeat;
-    background-size: cover;
     color:rgb(255, 255, 255);
     text-align: center;
     width: 100vw;
@@ -106,4 +103,20 @@ header ul li a {
 .topsongs li {
     display: list-item;
     list-style-position: inside;
+}
+
+.store {
+    display: block;
+    text-align: center;
+    width: 100vw;
+}
+.merchgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    align-items: center;}
+
+.merchgrid div {
+    padding: 100px;
+    background-color: chocolate;
 }
