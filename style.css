@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Marcellus&family=Oleo+Script&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-color: #174593;
+    align-items: center;
+}
+
+header {
+    padding-left: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color:aliceblue;
+    top: 0;
+    flex-direction: row;
+    min-height: 50px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+}
+header ul li {
+    list-style: none;
+    padding-right: 80px;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-family:'Poppins',sans-serif ;
+}
+.bg {
+    background-image: url(./assets/Backstreet\ Boys.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bandimg {
+    display: flex;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-size: 80px;
+    font-family:'Lucida Grande', serif;
+    font-style: italic;
+}
+
+.bandimg h1 {
+    margin-left: 50px;
+    padding-bottom: 300px;
+}
+
+.albums {
+    background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
