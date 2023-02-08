@@ -75,5 +75,8 @@ header ul li a {
 }
 
 .grid {
+    padding: 100px;
     display: grid;
+    column-gap: 60px;
+    grid-template-columns: auto auto auto;
 }
