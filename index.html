@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backstreet Boys</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
-        <h2>Backstreet Boys</h2>
+        <h1>Backstreet Boys</h1>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Band</a></li>
-            <li><a href="#">Merch</a></li>
+            <li><a href="#albums">Albums</a></li>
+            <li><a href="#band">Band</a></li>
+            <li><a href="#merch">Merch</a></li>
             <li><a href="#">Tour</a></li>
         </ul>
     </header>
     <section class="bg">
         <div class="bandimg">
-            <img src="./assets/backstreet-boys_2.jpg,1024,0.jpeg" height="650px">
-            <h1>Backstreet <br> Boys</h1>
+            <img src="./assets/hubbs2.png">
         </div>
     </section>
-    <section>
+    <section id="albums">
         <div class="albums">
-            <h1>Albums</h1>
-            <hr>
+            <h1 >Albums</h1>
         <div class="grid">
             <div>
                 <img src="./assets/album1dna.png" height="250px">
@@ -45,8 +44,12 @@
     </section>
     <section>
         <div class="topsongs">
+            <div class="spotify">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4uxVWONlOlTdYV4UyuqO7o?utm_source=generator" width="550px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="vl"></div>
             <div>
-            <h1 style="font-size: 40px;">Top Songs</h1><br>
+            <h1 style="font-size: 50px;">Top Songs</h1><br>
                 <ol><h3 style="font-weight: 200;">
                     <li>I Want It That Way</li><br>
                     <li>Everybody - Radio Edit</li><br>
@@ -54,11 +57,9 @@
                     <li>Shape of My Heart</li><br>
                     <li>Quit Playing Games (With My Heart)</li><br>
                 </ol></h3></div>
-        <div class="spotify">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4uxVWONlOlTdYV4UyuqO7o?utm_source=generator" width="550px" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div></div>
+            </div>
     </section>
-    <section>
+    <section id="merch">
         <div class="store">
             <h1 style="font-size: 80px; letter-spacing: 1px;">Store</h1><br>
             <div class="merchgrid">
@@ -85,11 +86,11 @@
             <button class="shop-all" onclick=""> Shop All</button>
         </div>
     </section>
-    <section>
+    <section id="band">
         <div class="band">
             <h1>Meet The Band</h1>
             <div class="bandgrid">
-                <div>
+                <div id="member" v>
                     <img src="./assets/howie.jpg" height="210px">
                     <div class="hide">
                         <h1>Howie Dorough</h1>

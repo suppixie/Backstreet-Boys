@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Marcellus&family=Oleo+Script&family=Poppins:wght@300;400&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 section {
     font-family: 'Poppins', sans-serif;
@@ -14,9 +14,13 @@ section {
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
+    background-color: rgb(16, 16, 16);
+    background-image: url(./assets/smthng.png);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 header {
@@ -28,8 +32,11 @@ header {
     background-color:aliceblue;
     top: 0;
     flex-direction: row;
-    min-height: 50px;
+    min-height: 60px;
     align-items: center;
+    font-family: "Marcellus";
+    font-weight:lighter;
+    letter-spacing: 2px;
 }
 
 header ul {
@@ -44,48 +51,41 @@ header ul li a {
     text-decoration: none;
     color: black;
     font-family:'Poppins',sans-serif ;
-}
-.bg {
-    background-image: url(./assets/Backstreet\ Boys.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-size: 18px;
 }
 
 .bandimg {
-    display: flex;
+    background-color: black;
     align-items: center;
-    color:rgb(255, 255, 255);
-    font-size: 80px;
-    font-family:'Lucida Grande', serif;
-    font-style: italic;
 }
-
-.bandimg h1 {
-    margin-left: 50px;
-    padding-bottom: 300px;
+.bandimg img {
+    width: 100vw;
+    z-index: 1;
 }
 
 .albums {
-    color:rgb(255, 255, 255);
+    color:white;
     text-align: center;
     width: 100vw;
+    min-height: 700px;
     display: block;
 }
 
 .albums h1 {
+    font-family: "Marcellus";
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 70px;
 }
 
 .grid {
-    padding: 100px;
+    padding: 50px;
     display: grid;
-    column-gap: 60px;
+    column-gap: 50px;
     grid-template-columns: auto auto auto;
+
 }
 
-.grid img:hover {
+.grid div:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -96,10 +96,20 @@ header ul li a {
     width: 100vw;
     max-width: 100%;
     display: flex;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 150px;
     justify-content: space-between;
+    align-items: center;
 }
-
+.topsongs h1 {
+    font-family: 'marcellus';
+}
+.vl {
+    border-left: 2px solid white;
+    height: 340px;
+    border-radius: 20px;
+  
+}
 .topsongs li {
     display: list-item;
     list-style-position: inside;
@@ -111,8 +121,13 @@ header ul li a {
     width: 100vw;
     color: rgb(255, 255, 255);
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 50px;   
 }
+
+.store h1 {
+    font-family: 'marcellus';
+}
+
 .merchgrid{
     text-align:center;
     display: grid;
@@ -164,6 +179,7 @@ header ul li a {
     transition: 0.3s ease-in-out;
 }
 
+
 .store button:hover {
     background-color: rgb(255, 255, 255);
     color:#0046c0;
@@ -171,6 +187,11 @@ header ul li a {
 .band {
     padding: 50px;
     color: white;
+    text-align: center;
+    width: 100vw;
+    max-width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .bandgrid {
     display: grid;
@@ -183,8 +204,14 @@ header ul li a {
 }
 .bandgrid img {
     border-radius: 100%;
+    transition: 0.5s;
 }
+.bandgrid img:hover {
+    /*transform: translate(-100px);*/
+    border-radius: 0;
+}
+
 .bandgrid img:hover + .hide {
     display: block;
-    transform: ;
+    /*transform: translate(-100px);*/
 }
