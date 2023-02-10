@@ -168,3 +168,23 @@ header ul li a {
     background-color: rgb(255, 255, 255);
     color:#0046c0;
 }
+.band {
+    padding: 50px;
+    color: white;
+}
+.bandgrid {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    column-gap:40px;
+    row-gap: 30px;
+}
+.hide {
+    display: none;
+}
+.bandgrid img {
+    border-radius: 100%;
+}
+.bandgrid img:hover + .hide {
+    display: block;
+    transform: ;
+}
