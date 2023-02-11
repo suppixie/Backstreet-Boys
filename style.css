@@ -5,6 +5,15 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+.body {
+    overflow-x: hidden;
+}
+section{
+    background-image: url(./assets/smthng.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
 section {
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
@@ -14,10 +23,7 @@ section {
     min-height: 100vh;
     justify-content: space-between;
     /* align-items: center; */
-    background-color: #FFFEFE;
-    background-image: url(./assets/smthng.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     /* background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover; */
@@ -94,6 +100,7 @@ header ul li a {
 
 }
 .albumname {
+    /* padding-top: 50px; */
     padding-left: 100px;
     align-content: center;
 }
@@ -248,34 +255,74 @@ header ul li a {
     text-align: center;
     width: 100vw;
     max-width: 100%;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 .band h1 {
     font-family: 'Marcellus';
-    font-size: 50px;
+    font-size: 100px;
     text-align: left;
+    padding-bottom: 30px;
 }
 .bandgrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 30%;
+    padding: 0 4px;
+  }
+  
+  .column .member {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+/* .bandgrid {
+    display: flex;
+}
+.member1, .member3, .member5 {
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+/* .bandgrid {
     display: grid;
     grid-template-columns: auto auto auto ;
     column-gap:40px;
     row-gap: 50px;
     max-height: 500px;
 }
-.member {
+.member4{
     max-height: 200px;
+    grid-column:calc(1) / span 1;
 }
+.member5{
+    grid-column: calc(2) / span 2; 
+}*/
 .hide {
     display: none;
 }
+.hide h1 {
+    font-family: 'Marcellus';
+    font-size: 35px;
+    text-align: center;
+}
+
 .bandgrid img {
-    border-radius: 100%;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
     transition: 0.5s;
 }
 .bandgrid img:hover {
-    /*transform: translate(-100px);*/
-    border-radius: 10px;
+    border-radius: 100%;
+    
 }
 
 .bandgrid img:hover + .hide {
