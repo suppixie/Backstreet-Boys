@@ -13,8 +13,8 @@ section {
     position: relative;
     min-height: 100vh;
     justify-content: space-between;
-    align-items: center;
-    background-color: rgb(16, 16, 16);
+    /* align-items: center; */
+    background-color: #FFFEFE;
     background-image: url(./assets/smthng.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,42 +53,60 @@ header ul li a {
     font-family:'Poppins',sans-serif ;
     font-size: 18px;
 }
+.bg{
+    background-image: url(./assets/hubbs2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.bandimg {
-    background-color: black;
-    align-items: center;
-}
-.bandimg img {
-    width: 100vw;
-    z-index: 1;
-}
 
 .albums {
-    color:white;
-    text-align: center;
+    background-color: #FFFEFE;
+    margin: 0;
+    /* color:black; */
+    text-align:left;
     width: 100vw;
-    min-height: 700px;
+    max-width: 100%;
     display: block;
+    align-items: end;
+    padding-left: 100px;
+    padding-top: 80px;
+
 }
 
 .albums h1 {
     font-family: "Marcellus";
-    padding-top: 30px;
-    font-size: 70px;
+    font-size: 80px;
 }
-
 .grid {
-    padding: 50px;
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: auto auto auto;
-
+    max-height: 100vh;
 }
-
-.grid div:hover {
+.grid div img {
+    height: 400px;
+}
+/* .grid div:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.2); */
+.albumcover {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    padding-bottom: 20px;
+}
+.albumcover h2 {
+    padding-bottom: 20px;
+}
+.albumcover::after {
+    transform: translate(-30px);
+}
+
+.albums button {
+    background-color: black;
+    color: #FFFEFE;
+    font-size: 20px;
+    padding:10px;
+    cursor: pointer;
 }
 
 .topsongs {
@@ -197,7 +215,11 @@ header ul li a {
     display: grid;
     grid-template-columns: auto auto auto ;
     column-gap:40px;
-    row-gap: 30px;
+    row-gap: 50px;
+    max-height: 500px;
+}
+.member {
+    max-height: 200px;
 }
 .hide {
     display: none;
@@ -208,7 +230,7 @@ header ul li a {
 }
 .bandgrid img:hover {
     /*transform: translate(-100px);*/
-    border-radius: 0;
+    border-radius: 10px;
 }
 
 .bandgrid img:hover + .hide {

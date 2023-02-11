@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backstreet Boys</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
@@ -19,28 +18,78 @@
         </ul>
     </header>
     <section class="bg">
-        <div class="bandimg">
-            <img src="./assets/hubbs2.png">
-        </div>
+            <!-- landing page image -->
     </section>
     <section id="albums">
         <div class="albums">
-            <h1 >Albums</h1>
         <div class="grid">
-            <div>
-                <img src="./assets/album1dna.png" height="250px">
-                <h4>DNA - 2019</h4>
+            <div class="albumcover">
+                <img src="./assets/album1dna.png">
+                <div class="albumname">
+                <h1 >Albums</h1>
+                <hr>
+                <h2 style="font-size: 40px; font-weight: 400;">DNA - 2019</h2>
+                <button class="button" onclick="">Stream</button>
+                </div>
             </div>
-            <div>
-                <img src="./assets/album2bb.jpg"  height="250px">
-                <h4>BACKSTREETS BACK - 1997</h4>
+            <div class="albumcover">
+                <img src="./assets/album2bb.jpg" >
+                <div class="albumname">
+                <h1 >Albums</h1>
+                <hr>
+                <h2 style="font-size: 40px; font-weight: 400;">BACKSTREETS <br>BACK - 1997</h2>
+                <button class="button" onclick="">Stream</button>
+                </div>
             </div>
-            <div>
-                <img src="./assets/album3mill.jpg" height="250px">
-                <h4>MILLENIUM - 1999</h4>
+            <div class="albumcover">
+                <img src="./assets/album3mill.jpg">
+                <div class="albumname">
+                <h1 >Albums</h1>
+                <hr>
+                <h2 style="font-size: 40px; font-weight: 400;">MILLENIUM - 1999</h2>
+                <button class="button" onclick="">Stream</button>
+                </div>
+            </div>
+            <div class="albumcover">
+                <img src="./assets/album4verybb.jpg">
+                <div class="albumname">
+                <h1 >Albums</h1>
+                <hr>
+                <h2 style="font-size: 40px; font-weight: 400;"> A Very Backstreet Christmas - 2010</h2>
+                <button class="button" onclick="">Stream</button>
+                </div>
+            </div>
+            <div class="albumcover">
+                <img src="./assets/album3mill.jpg">
+                <div class="albumname">
+                <h1 >Albums</h1>
+                <hr>
+                <h2 style="font-size: 40px; font-weight: 400;">MILLENIUM - 1999</h2>
+                <button class="button" onclick="">Stream</button>
+                </div>
             </div>
         </div>
+        <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
     </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("albumcover");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "flex";}
+        </script>
     </section>
     <section>
         <div class="topsongs">
@@ -90,31 +139,31 @@
         <div class="band">
             <h1>Meet The Band</h1>
             <div class="bandgrid">
-                <div id="member" v>
+                <div class="member">
                     <img src="./assets/howie.jpg" height="210px">
                     <div class="hide">
                         <h1>Howie Dorough</h1>
                     </div>
                 </div>
-                <div>
+                <div class="member">
                     <img src="./assets/richardson.jpg" height="210px">
                     <div class="hide">
                         <h1>Kevin Richardson</h1>
                     </div>
                 </div>
-                <div>
+                <div class="member">
                     <img src="./assets/mclean.jpg" height="210px">
                     <div class="hide">
                         <h1>AJ McLean</h1>
                     </div>
                 </div>
-                <div>
+                <div class="member">
                     <img src="./assets/nick.jpg" height="210px">
                     <div class="hide">
                         <h1>Nick Carter</h1>
                     </div>
                 </div>
-                <div>
+                <div class="member">
                     <img src="./assets/britell.jpg" height="210px">
                     <div class="hide">
                         <h1>Brian Littrell</h1>
