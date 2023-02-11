@@ -63,12 +63,10 @@ header ul li a {
 .albums {
     background-color: #FFFEFE;
     margin: 0;
-    /* color:black; */
-    text-align:left;
     width: 100vw;
     max-width: 100%;
     display: block;
-    align-items: end;
+    align-items: center;
     padding-left: 100px;
     padding-top: 80px;
 
@@ -79,6 +77,7 @@ header ul li a {
     font-size: 80px;
 }
 .grid {
+    display: flex;
     max-height: 100vh;
 }
 .grid div img {
@@ -90,17 +89,51 @@ header ul li a {
     transform: scale(1.2); */
 .albumcover {
     display: flex;
-    justify-content: space-between;
-    width: 800px;
+    width: 900px;
     padding-bottom: 20px;
+
+}
+.albumname {
+    padding-left: 100px;
+    align-content: center;
 }
 .albumcover h2 {
     padding-bottom: 20px;
 }
-.albumcover::after {
-    transform: translate(-30px);
-}
+/* .albumcover::before {
+    animation: loaderAnim 0.7s linear infinite alternate forwards;
+    transform: translate3d(-50%,20%,0);
+} */
+/* .socials {
+    display: block;
 
+}
+.ul {
+    list-style-type: none;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.li {
+    display: list-item;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-facebook,  .fa-twitter, .fa-youtube, .fa-instagram , .fa-spotify {
+    background: #000;
+    color: white;
+  }
+  */
 .albums button {
     background-color: black;
     color: #FFFEFE;
@@ -115,7 +148,7 @@ header ul li a {
     max-width: 100%;
     display: flex;
     padding-left: 100px;
-    padding-right: 150px;
+    padding-right: 120px;
     justify-content: space-between;
     align-items: center;
 }
@@ -132,18 +165,23 @@ header ul li a {
     display: list-item;
     list-style-position: inside;
 }
-
+.topsongs h3 , .store h3 {
+    font-weight: 500;
+} 
 .store {
+    background-color: #FFFEFE;
     text-align: center;
     display: block;
     width: 100vw;
-    color: rgb(255, 255, 255);
-    padding-left: 50px;
-    padding-right: 50px;   
+    color:#000;
+    padding:50px;
+    padding-bottom: 40px;
+    
 }
 
 .store h1 {
     font-family: 'marcellus';
+    padding-bottom: 0;
 }
 
 .merchgrid{
@@ -154,10 +192,12 @@ header ul li a {
     align-items: center;
    
 }
-
+.merch{
+    height: 50px;
+}
 .merchgrid div {
-    padding-top: 10px;
-    padding-bottom: 100px;
+    padding-top: 5px;
+    padding-bottom: 85px;
     padding-left: 20px;
     padding-right: 20px;
     background-color:rgb(180, 180, 180);
@@ -179,28 +219,28 @@ header ul li a {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     text-align: start;
 }
 
 
 .store button {
-    border: 3px solid aliceblue;
+    border: 3px solid black;
     border-radius: 70px;
     cursor: pointer;
+    margin-top: 5px;
     background-color:transparent;
-    margin-top: 20px;
-    font-size: 30px;
-    padding: 15px 70px;
+    font-size: 20px;
+    padding: 10px 60px;
     max-width: 38.6rem;
-    color: rgb(255, 255, 255);
+    color: black;
     transition: 0.3s ease-in-out;
 }
 
 
 .store button:hover {
-    background-color: rgb(255, 255, 255);
-    color:#0046c0;
+    background-color: #000;
+    color:#FFFEFE;
 }
 .band {
     padding: 50px;
@@ -210,6 +250,11 @@ header ul li a {
     max-width: 100%;
     padding-left: 150px;
     padding-right: 150px;
+}
+.band h1 {
+    font-family: 'Marcellus';
+    font-size: 50px;
+    text-align: left;
 }
 .bandgrid {
     display: grid;
