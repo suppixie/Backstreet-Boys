@@ -15,7 +15,7 @@
             <li><a href="#albums">Albums</a></li>
             <li><a href="#band">Band</a></li>
             <li><a href="#merch">Merch</a></li>
-            <li><a href="#">Tour</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
     </header>
     <section class="bg">
@@ -195,13 +195,46 @@
                 var i;
                 function two() {
                   for (i = 0; i < elements.length; i++) {
-                    elements[i].style.flex = "30%";
+                    elements[i].style.display = "flex";
                   }
                 }
                 </script>
         </div>
     </section>
-    <footer>
+    <!-- <section id="gallery">
+        <script>
+            var elements = document.getElementsByClassName("column");
+            var i;
+            function two() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.display = "block";  // IE10
+                elements[i].style.display = "block";
+              }
+            }
+       
+            </script>
+    </section> -->
+    <footer id="gallery">
+        <div class="row">
+            <div class="column">
+                <img src="https://i.pinimg.com/originals/f9/f2/bf/f9f2bffc88cf2438b0926d98b41ce6e4.jpg">
+                <img src="https://i.pinimg.com/564x/23/1c/f1/231cf17c79a2c1c98387ffc0b953062d.jpg">
+                <img src="https://i.pinimg.com/564x/be/b4/e5/beb4e56ae27ff896b281f6a233e9b372.jpg">
+                <img src="https://i.pinimg.com/564x/6e/af/d9/6eafd976d5b01904efb7048d4124a3c2.jpg">
+                <img src="https://i.pinimg.com/564x/c4/2a/f0/c42af0b5a4380fb7cd2be0831c516049.jpg">
+                <img src="https://i.pinimg.com/564x/74/4f/8d/744f8d0f457cb906683e22a5d740946a.jpg">
+                <img src="https://i.pinimg.com/564x/df/b6/24/dfb62408cf29a53e80d48d7b48155558.jpg">
+            </div>
+            <div class="column">
+                <img src="https://i.pinimg.com/564x/6f/b3/80/6fb380719dcb4e2feb3a944e866db975.jpg">
+                <img src="https://i.pinimg.com/564x/2c/5d/23/2c5d23c311b4974967ce18f1a8d9fb75.jpg">
+                <img src="https://i.pinimg.com/564x/51/48/31/51483168604f096213003c14225128d6.jpg">
+                <img src="https://i.pinimg.com/564x/07/48/4a/07484acd803dbda683c215faaa902945.jpg">
+                <img src="https://i.pinimg.com/564x/97/ec/5c/97ec5c30ed93883471af6f30669480dd.jpg">
+                <img src="https://i.pinimg.com/564x/97/06/d5/9706d527ccc9daa320710ec0e86852d2.jpg">
+                <img src="https://i.pinimg.com/564x/f5/f8/96/f5f89609d72a6c088224d8021a9cc287.jpg">
+            </div>
+        </div>
         <div class="logo"><h1>Backstreet Boys</h1>
         <div class="socials2">
             <a href="https://www.instagram.com/backstreetboys/?hl=en" target="_blank" class="fa fa-instagram"></a>
@@ -209,8 +242,9 @@
             <a href="https://twitter.com/backstreetboys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"target="_blank" class="fa fa-twitter"></a> 
             <a href="https://www.youtube.com/channel/UC1OR2YNQLZJYFdQjFrPWvVw"target="_blank" class="fa fa-youtube"></a>
             <a href="https://open.spotify.com/artist/5rSXSAkZ67PYJSvpUpkOr7?autoplay=true" target="_blank" class="fa fa-spotify"></a>
-            </div></div>
-        <p>© mamthapatalay6@gmail.com</p>
+            </div>
+            <p>© mamthapatalay6@gmail.com</p>
+        </div>
     </footer>
 </body>
 </html>
