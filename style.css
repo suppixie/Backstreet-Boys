@@ -111,36 +111,7 @@ header ul li a {
     animation: loaderAnim 0.7s linear infinite alternate forwards;
     transform: translate3d(-50%,20%,0);
 } */
-/* .socials {
-    display: block;
 
-}
-.ul {
-    list-style-type: none;
-    list-style: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-.li {
-    display: list-item;
-}
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fa-facebook,  .fa-twitter, .fa-youtube, .fa-instagram , .fa-spotify {
-    background: #000;
-    color: white;
-  }
-  */
 .albums button {
     background-color: black;
     color: #FFFEFE;
@@ -162,7 +133,7 @@ header ul li a {
 .topsongs h1 {
     font-family: 'marcellus';
 }
-.vl {
+.topsongs .vl {
     border-left: 2px solid white;
     height: 340px;
     border-radius: 20px;
@@ -250,14 +221,13 @@ header ul li a {
     color:#FFFEFE;
 }
 .band {
-    padding: 50px;
     color: white;
     text-align: center;
     width: 100vw;
     max-width: 100%;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -266,23 +236,33 @@ header ul li a {
     font-size: 100px;
     text-align: left;
     padding-bottom: 30px;
+    padding-top: 60px;
 }
 .bandgrid {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0 5px;
   }
   
-  /* Create two equal columns that sits next to each other */
-  .column {
+  .column1 {
     flex: 30%;
-    padding: 0 4px;
+    padding: 60px 20px;
   }
   
-  .column .member {
-    margin-top: 8px;
-    vertical-align: middle;
+  .column2 {
+    flex: 30%;
+    padding: 20px 20px;
   }
+  .column3 {
+    flex: 30%;
+    padding: 110px 20px;
+  }
+  .column1 .member, .column2 .member , .column3 .member{
+    vertical-align: middle;
+    padding-bottom: 10px;
+  }
+ 
+
 /* .bandgrid {
     display: flex;
 }
@@ -318,14 +298,33 @@ header ul li a {
     border-radius: 20px;
     height: 200px;
     width: 200px;
-    transition: 0.5s;
+    transition: 1s;
 }
 .bandgrid img:hover {
     border-radius: 100%;
-    
+    filter: drop-shadow(6px 10px 10px #fffefe);    
 }
 
 .bandgrid img:hover + .hide {
     display: block;
     /*transform: translate(-100px);*/
 }
+
+.footer {
+    height: 50vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fa {
+    display: flex;
+    font-size: 40px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa-facebook,  .fa-twitter, .fa-youtube, .fa-instagram , .fa-spotify {
+    color: #000;
+  }

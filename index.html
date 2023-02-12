@@ -69,15 +69,7 @@
                 <button class="button" onclick="">Stream</button>
                 </div>
             </div>
-            <!-- <div class="socials">
-                <ul>
-                <li><a href="#" class="fa fa-instagram"></a></li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a> </li>
-                <li><a href="#" class="fa fa-youtube"></a></li>
-                <li><a href="#" class="fa fa-spotify"></a></li>
-                </ul>
-            </div> -->
+            
         </div>
         <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
@@ -148,34 +140,35 @@
     <section id="band">
         <div class="band">
             <h1>Meet<br>The<br>Band</h1>
+            <div class="vl"></div>
             <div class="bandgrid">
-                <div class="column">
-                <div class="member">
-                    <img src="./assets/howie.jpg" height="210px">
-                    <div class="hide">
-                        <h1>Howie Dorough</h1>
+                <div class="column1">
+                    <div class="member">
+                        <img src="./assets/mclean.jpg" height="210px">
+                        <div class="hide">
+                            <h1>AJ McLean</h1>
+                        </div>
                     </div>
-                </div>
-                <div class="member">
-                    <img src="./assets/richardson.jpg" height="210px">
-                    <div class="hide">
-                        <h1>Kevin Richardson</h1>
+                    <div class="member">
+                        <img src="./assets/nick.jpg" height="210px">
+                        <div class="hide">
+                            <h1>Nick Carter</h1>
+                        </div>
+                    </div></div>
+                <div class="column2">
+                    <div class="member">
+                        <img src="./assets/howie.jpg" height="210px">
+                        <div class="hide">
+                            <h1>Howie Dorough</h1>
+                        </div>
                     </div>
-                </div></div>
-                <div class="column">
-                <div class="member">
-                    <img src="./assets/mclean.jpg" height="210px">
-                    <div class="hide">
-                        <h1>AJ McLean</h1>
-                    </div>
-                </div>
-                <div class="member">
-                    <img src="./assets/nick.jpg" height="210px">
-                    <div class="hide">
-                        <h1>Nick Carter</h1>
-                    </div>
-                </div></div>
-                <div class="column">
+                    <div class="member">
+                        <img src="./assets/richardson.jpg" height="210px">
+                        <div class="hide">
+                            <h1>Kevin Richardson</h1>
+                        </div>
+                    </div></div>
+                <div class="column3">
                 <div class="member">
                     <img src="./assets/britell.jpg" height="210px">
                     <div class="hide">
@@ -184,7 +177,7 @@
                 </div></div>
             </div>
             <script>
-                var elements = document.getElementsByClassName("column");
+                var elements = document.getElementsByClassName("column1");
                 var i;
                 function two() {
                   for (i = 0; i < elements.length; i++) {
@@ -194,5 +187,15 @@
                 </script>
         </div>
     </section>
+    <footer>
+        <div class="logo"><h1>Backstreet Boys</h1></div>
+        <div class="socials">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a> 
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-spotify"></a>
+            </div>
+    </footer>
 </body>
 </html>
