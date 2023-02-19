@@ -254,6 +254,7 @@ header ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100vh;
 }
 .band h1 {
     font-family: 'Marcellus';
@@ -335,6 +336,7 @@ header ul li a {
 .bandgrid img:hover {
     border-radius: 100%;
     filter: drop-shadow(6px 10px 10px #fffefe);    
+    transition: 1s;
 } 
 
 .bandgrid img:hover + .hide {
