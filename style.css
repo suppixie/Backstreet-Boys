@@ -23,16 +23,11 @@ section {
     position: relative;
     min-height: 100vh;
     justify-content: space-between;
-    /* align-items: center; */
-   
-    /* background-image: url(./assets/Backstreet\ Boys\ \(1\).png);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
 
 header {
     padding-left: 50px;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -266,6 +261,10 @@ header ul li a {
     text-align: left;
     padding-bottom: 30px;
 }
+
+.meetband {
+    position: absolute;
+}
 .bandgrid {
     display: flex;
     flex-wrap: wrap;
@@ -374,18 +373,15 @@ footer::-webkit-scrollbar{
     width: 300px;
     display: block;
     padding: 0 4px;
+
   }
-  
+ 
   .column img {
     height: auto;
     width: 100%;
     margin-top: 6px;
     vertical-align: middle;
   }
- .column:hover {
-    
- }
-
 
 .logo {
     display:block;
